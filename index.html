@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WASA Miner - Miná la cripto más rentable</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:Inter,system-ui,-apple-system,sans-serif;background:#0a0a0b;color:#fff;overflow-x:hidden}
+  nav{max-width:1200px;margin:0 auto;padding:28px 24px;display:flex;justify-content:space-between;align-items:center}
+  .logo{font-weight:900;letter-spacing:-0.04em;font-size:22px}
+  .logo span{color:#7c5cff}
+  .menu{font-size:13px;opacity:0.5;cursor:pointer}
+  .hero{max-width:1200px;margin:0 auto;padding:80px 24px 60px;display:grid;grid-template-columns:1.1fr 0.9fr;gap:40px;align-items:center}
+  .hero h1{font-size:64px;line-height:0.9;letter-spacing:-0.05em;font-weight:900}
+  .hero h1 i{font-style:normal;color:#7c5cff}
+  .hero p{margin-top:20px;font-size:18px;line-height:1.5;color:#9a9a9e;max-width:440px}
+  .hero-img img{width:100%;max-width:520px;display:block;margin-left:auto;filter:drop-shadow(0 20px 60px rgba(124,92,255,0.3))}
+  .cta-wrap{max-width:1200px;margin:0 auto;padding:0 24px 100px}
+  .cta-box{background:#141416;border:1px solid #222;border-radius:20px;padding:28px;display:flex;gap:16px;align-items:center;max-width:640px}
+  .cta-box input{flex:1;background:#0a0a0b;border:1px solid #2a2a2e;border-radius:12px;padding:14px 16px;color:#fff;font-size:14px;outline:none}
+  .btn{background:#fff;color:#000;padding:14px 28px;border-radius:12px;font-weight:800;font-size:14px;border:none;cursor:pointer;white-space:nowrap}
+  .btn:hover{background:#e8e8e8}
+  .hint{font-size:11px;color:#555;margin-top:10px;letter-spacing:0.05em}
+  .features{max-width:1200px;margin:0 auto;padding:40px 24px 120px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;border-top:1px solid #1a1a1d}
+  .f h3{font-size:14px;font-weight:800;margin-bottom:8px;letter-spacing:-0.02em}
+  .f p{font-size:13px;line-height:1.6;color:#7a7a7e}
+  footer{border-top:1px solid #1a1a1d;padding:32px 24px;text-align:center;color:#333;font-size:12px}
+  @media(max-width:800px){
+    .hero{grid-template-columns:1fr;padding-top:40px}
+    .hero h1{font-size:42px}
+    .hero-img{order:-1}
+    .hero-img img{max-width:300px;margin:0 auto}
+    .cta-box{flex-direction:column;align-items:stretch}
+    .features{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">WASA<span>.MINER</span></div>
+  <div class="menu">DOCS ▾</div>
+</nav>
+
+<section class="hero">
+  <div>
+    <h1>Tu PC<br>mina solo.<br><i>95% para vos.</i></h1>
+    <p>Multi-miner open source. Detecta la moneda más rentable y empieza a minar con tu CPU + GPU en un click.</p>
+  </div>
+  <div class="hero-img">
+    <img src="minero.png" alt="minero">
+  </div>
+</section>
+
+<div class="cta-wrap">
+  <div class="cta-box">
+    <input placeholder="Pegá tu wallet XMR / RVN / KAS...">
+    <button class="btn">DESCARGAR - 15MB</button>
+  </div>
+  <div class="hint">WINDOWS 10/11 • 2% FEE • NO LOGIN • OPEN SOURCE XMRIG + GMiner</div>
+</div>
+
+<div class="features">
+  <div class="f">
+    <h3>AUTO-SWITCH</h3>
+    <p>Chequea WhatToMine cada 10 min. Si RVN rinde más que XMR, cambia solo. Vos no tocás nada.</p>
+  </div>
+  <div class="f">
+    <h3>MANUAL MODE</h3>
+    <p>Elegí XMR, RVN o KAS fijo. Ideal si ya sabés que querés holdear una sola.</p>
+  </div>
+  <div class="f">
+    <h3>SIN CUSTODIA</h3>
+    <p>No nos das tus monedas. Minás directo a tu wallet y al pool. Nosotros solo vemos el 2%.</p>
+  </div>
+</div>
+
+<footer>footer - links, twitter, github, etc.</footer>
+
+</body>
+</html>
