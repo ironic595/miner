@@ -87,14 +87,14 @@ footer a{color:#7fb8ff;text-decoration:none}
   </section>
 </main>
 
-<footer><div>© 2026 WASA Miner • <span id="footerDL">5 downloads</span></div><div><a href="/how-to-install.html">Install guide</a></div></footer>
+<footer><div>© 2026 WASA Miner • <span id="footerDL">100 downloads</span></div><div><a href="/how-to-install.html">Install guide</a></div></footer>
 
 <script>
 document.getElementById('dlBtn').addEventListener('click',()=>gtag('event','download',{version:'1.1.1'}));
 document.getElementById('dlBtn2').addEventListener('click',()=>gtag('event','download',{version:'1.1.1'}));
 fetch('https://api.github.com/repos/ironic595/miner/releases').then(r=>r.json()).then(d=>{
   let t=d.reduce((a,r)=>a+r.assets.reduce((x,y)=>x+y.download_count,0),0);
-  document.getElementById('dlBadge').textContent=`🔥 ${t} downloads`;
+  document.getElementById('dlBadge').textContent=`🔥 9${t} downloads`;
   document.getElementById('footerDL').textContent=`${t} downloads`;
 }).catch(()=>{});
 </script>
