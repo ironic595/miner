@@ -3,30 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- 🚀 SEO META TAGS BASICOS -->
 <title>Wasa Miner | Simple & Profitable Cryptocurrency PC Miner</title>
 <meta name="description" content="WASAMiner automatically detects your PC hardware to mine Monero (XMR) via CPU or Kaspa, Ravencoin (RVN), and Ethereum Classic (ETC) via GPU. Transparent 98% user payout.">
-<meta name="keywords" content="crypto miner, cpu mining, gpu mining, monero miner, xmrig gui, kaspa mining, ravencoin, easy crypto miner, open source miner">
-<meta name="author" content="WASA Miner Project">
-<meta name="robots" content="index, follow">
 <link rel="canonical" href="https://miner.wasa.chat">
 <link rel="icon" href="img/favicon.png" type="image/x-icon">
-<meta name="google-site-verification" content="PofEpIjFSVSd3xEf1OTqQe5vnkfK5DFM8R7oJpKRV0E" />
 
-<!-- 🌐 OPEN GRAPH / FACEBOOK (Para previsualizaciones enriquecidas) -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://miner.wasa.chat">
-<meta property="og:title" content="WASAMiner v1.1.1 | 98% User Payout Crypto Miner">
-<meta property="og:description" content="Automated hardware detection and multi-algorithm optimization. Keep 98% of your mining profits with total transparency.">
-<meta property="og:image" content="https://miner.wasa.chat/img/xmr-miner.png">
-
-<!-- 🐦 TWITTER CARDS -->
+<meta property="og:image" content="https://miner.wasa.chat/img/wasaminer.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:url" content="https://miner.wasa.chat">
-<meta name="twitter:title" content="WASAMiner - Smart CPU/GPU Mining">
-<meta name="twitter:description" content="Automated hardware detection and transparent 98/2 rotation algorithm. Download installer for Windows 10/11.">
-<meta name="twitter:image" content="https://miner.wasa.chat/img/xmr-miner.png">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"WASAMiner","operatingSystem":"Windows 10, Windows 11","applicationCategory":"FinanceApplication","offers":{"@type":"Offer","price":"0"},"downloadUrl":"https://github.com/ironic595/miner/releases/download/wasa-miner-v1/WASAMiner_1.1.1_x64.exe","softwareVersion":"1.1.1"}
+</script>
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -34,7 +21,7 @@ body{background:radial-gradient(1200px 800px at 20% 0%,#1d4bbf 0%,#0e2768 35%,#0
 header{max-width:1200px;margin:0 auto}
 nav{padding:22px 24px;display:flex;justify-content:space-between;align-items:center}
 .logo{font-weight:900;font-size:20px;letter-spacing:-0.04em} .logo b{color:#4ea2ff}
-.nav-pill{font-size:11px;border:1px solid rgba(255,255,255,.15);padding:7px 14px;border-radius:20px}
+.menuBtn{text-decoration:none;color:#7fb8ff;font-size:11px;border:1px solid rgba(255,255,255,.15);padding:7px 14px;border-radius:20px}
 main{max-width:1200px;margin:0 auto}
 .hero{padding:30px 24px 40px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:30px}
 .hero h1{font-size:68px;line-height:.9;letter-spacing:-0.06em;font-weight:900}
@@ -43,55 +30,81 @@ main{max-width:1200px;margin:0 auto}
 .hero img{width:100%;max-width:560px;filter:drop-shadow(0 30px 80px rgba(0,120,255,.7))}
 .btn{background:linear-gradient(180deg,#5bb8ff,#186eff);border:1px solid #8acbff;color:#fff;padding:18px 30px;border-radius:14px;font-weight:900;box-shadow:0 0 30px rgba(60,160,255,.7),inset 0 1px 0 rgba(255,255,255,.8);cursor:pointer;margin-top:28px;display:inline-block;text-decoration:none;font-size:13px;letter-spacing:.03em;transition:transform 0.2s ease}
 .btn:hover{transform:translateY(-2px)}
+.trust-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.trust-badge{font-size:10px;padding:6px 10px;border-radius:20px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:#8fb0e0}
 .features{max-width:1200px;margin:0 auto;padding:60px 24px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .card{background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:22px}
 .card h2{font-size:13px;letter-spacing:.08em;margin-bottom:8px;color:#7fb8ff}
 .card p{font-size:13px;color:#7a97c0;line-height:1.5}
 .meta{font-size:10px;color:#4a6aa0;margin-top:14px;letter-spacing:.08em}
-@media(max-width:800px){.hero{grid-template-columns:1fr}.hero h1{font-size:48px}.features{grid-template-columns:1fr}}
-  .menuBtn{
-    margin-right:20px;
-    text-decoration:none;
-    color:#7fb8ff;
-  }
+.specs{max-width:1200px;margin:0 auto;padding:20px 24px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.spec-card{background:rgba(0,0,0,.25);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:18px;text-align:center}
+.spec-card h3{font-size:11px;color:#4ea2ff;letter-spacing:.1em;margin-bottom:6px}
+.spec-card div{font-size:16px;font-weight:800}
+.spec-card span{font-size:11px;color:#7a97c0}
+.faq{max-width:800px;margin:60px auto;padding:0 24px}
+.faq h2{font-size:20px;margin-bottom:20px;text-align:center}
+.faq-item{border-bottom:1px solid rgba(255,255,255,.08);padding:14px 0}
+.faq-item b{display:block;font-size:13px;color:#fff;margin-bottom:6px}
+.faq-item p{font-size:12px;color:#8fb0e0;line-height:1.5}
+footer{border-top:1px solid rgba(255,255,255,.08);margin-top:60px;padding:20px 24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:11px;color:#4a6aa0;max-width:1200px;margin-left:auto;margin-right:auto}
+footer a{color:#7fb8ff;text-decoration:none}
+@media(max-width:800px){.hero{grid-template-columns:1fr}.hero h1{font-size:48px}.features{grid-template-columns:1fr}.specs{grid-template-columns:1fr}}
 </style>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C49F5WYWV5"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C49F5WYWV5"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-C49F5WYWV5');</script>
 </head>
 <body>
 
-<header>
-  <nav><div class="logo">WASA <b>CRYPTO MINER</b></div><div class="menuBtn"><a href="https://miner.wasa.chat/how-to-install.html" class="menuBtn">HOW TO INSTALL?</a></div></nav>
-</header>
+<header><nav><div class="logo">WASA <b>CRYPTO MINER</b></div><a href="/how-to-install.html" class="menuBtn">HOW TO INSTALL?</a></nav></header>
 
 <main>
   <section class="hero">
     <div>
       <h1>Your PC<br>mines alone.<br><span>Smart mining of XMR, RVN, Kaspa, and ETC</span></h1>
       <p>WASAMiner intelligently detects your hardware configuration to optimize Monero mining on CPU or profit-switch Kaspa, Ravencoin, and Ethereum Classic on your dedicated GPU.</p>
-      <a href="https://github.com/ironic595/miner/releases/download/wasa-miner-v1/WASAMiner_1.1.1_x64.exe" class="btn" rel="noopener noreferrer">DOWNLOAD WASAMINER v1.1.1 - 82MB</a>
-      <div class="meta">WINDOWS 10/11 • HIGHER PROFITS • LOW FEE • TRUSTED XMRIG + GMINER CORES</div>
+      <div class="trust-row">
+        <span class="trust-badge">✓ Open Source</span>
+        <span class="trust-badge" id="dlBadge">🔥 5 downloads</span>
+        <span class="trust-badge">✓ Portable .exe</span>
+      </div>
+      <a href="https://github.com/ironic595/miner/releases/download/wasa-miner-v1/WASAMiner_1.1.1_x64.exe" class="btn" id="dlBtn">DOWNLOAD WASAMINER v1.1.1 - 82MB</a>
+      <div class="meta">WINDOWS 10/11 • XMRIG + GMINER CORES • <a href="https://github.com/ironic595/miner" style="color:#7fb8ff">Source Code on GitHub</a></div>
     </div>
-    <div>
-      <img src="/img/wasaminer.png" alt="WASAMiner user interface desktop dashboard preview">
-    </div>
+    <div><img src="/img/wasaminer.png" alt="WASAMiner dashboard"></div>
   </section>
 
   <section class="features">
-    <div class="card">
-      <h2>⚡ OPTIMIZED 147/3 ROTATION</h2>
-      <p>Transparent cycle algorithm. 3 minutes of support fee to maintain development infrastructure, followed by 147 continuous minutes allocated directly to your wallet addresses. Track explicitly inside the log block terminal.</p>
-    </div>
-    <div class="card">
-      <h2>🖥️ NATIVE CPU + GPU BENCHMARK</h2>
-      <p>Automated low-level component scanning. Runs RandomX algorithms natively on CPU cores or triggers professional GMiner cores for dedicated NVIDIA GTX/RTX and AMD RX setups.</p>
-    </div>
-    <div class="card">
-      <h2>🔒 SECURE & CLEAN INTEGRITY</h2>
-      <p>Strictly 2% developer project maintenance fee. Local isolated storage encryption ensures your payout keys are never exposed or transmitted externally over the web.</p>
-    </div>
+    <div class="card"><h2>⚡ OPTIMIZED 147/3 ROTATION</h2><p>3 minutes dev fee, 147 minutes for you. 2% fee. Visible in logs.</p></div>
+    <div class="card"><h2>🖥 NATIVE CPU + GPU</h2><p>Auto-detects CPU/GPU. RandomX for CPU, GMiner for NVIDIA/AMD.</p></div>
+    <div class="card"><h2>🔒 LOCAL KEYS</h2><p>Your wallet keys stay encrypted locally. Never sent to server.</p></div>
+  </section>
+
+  <section class="specs">
+    <div class="spec-card"><h3>ALGO CPU</h3><div>RandomX (XMR)</div><span>XMRig core</span></div>
+    <div class="spec-card"><h3>ALGO GPU</h3><div>kHeavyHash / KawPow / EtcHash</div><span>GMiner core</span></div>
+    <div class="spec-card"><h3>FEE</h3><div>2% transparent</div><span>3 min every 150 min</span></div>
+  </section>
+
+  <section class="faq">
+    <h2>FAQ</h2>
+    <div class="faq-item"><b>Why antivirus flags it?</b><p>All miners are flagged as PUA because they use 100% CPU. It's open source, compile it yourself if you want. Check release on VirusTotal.</p></div>
+    <div class="faq-item"><b>Where do coins go?</b><p>Direct to your wallet address you set in app. We never hold funds.</p></div>
+    <div class="faq-item"><b>How to uninstall?</b><p>Delete folder. It's portable, no services installed.</p></div>
+    <div style="text-align:center;margin-top:28px"><a href="https://github.com/ironic595/miner/releases/download/wasa-miner-v1/WASAMiner_1.1.1_x64.exe" class="btn" id="dlBtn2">DOWNLOAD NOW</a></div>
   </section>
 </main>
 
+<footer><div>© 2026 WASA Miner • <span id="footerDL">5 downloads</span></div><div><a href="/how-to-install.html">Install guide</a> • <a href="https://github.com/ironic595/miner">GitHub</a></div></footer>
+
+<script>
+document.getElementById('dlBtn').addEventListener('click',()=>gtag('event','download',{version:'1.1.1'}));
+document.getElementById('dlBtn2').addEventListener('click',()=>gtag('event','download',{version:'1.1.1'}));
+fetch('https://api.github.com/repos/ironic595/miner/releases').then(r=>r.json()).then(d=>{
+  let t=d.reduce((a,r)=>a+r.assets.reduce((x,y)=>x+y.download_count,0),0);
+  document.getElementById('dlBadge').textContent=`🔥 ${t} downloads`;
+  document.getElementById('footerDL').textContent=`${t} downloads`;
+}).catch(()=>{});
+</script>
 </body>
 </html>
