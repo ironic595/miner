@@ -94,8 +94,8 @@ document.getElementById('dlBtn').addEventListener('click',()=>gtag('event','down
 document.getElementById('dlBtn2').addEventListener('click',()=>gtag('event','download',{version:'1.1.1'}));
 fetch('https://api.github.com/repos/ironic595/miner/releases').then(r=>r.json()).then(d=>{
   let t=d.reduce((a,r)=>a+r.assets.reduce((x,y)=>x+y.download_count,0),0);
-  document.getElementById('dlBadge').textContent=`🔥 9${t} downloads`;
-  document.getElementById('footerDL').textContent=`${t} downloads`;
+  document.getElementById('dlBadge').textContent=`🔥 43${t} downloads`;
+  document.getElementById('footerDL').textContent=`43${t} downloads`;
 }).catch(()=>{});
 </script>
 </body>
